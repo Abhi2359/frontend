@@ -8,7 +8,7 @@ import {
 import { csv } from "d3-fetch";
 import { scaleLinear } from "d3-scale";
 import sortBy from "lodash/sortBy";
-
+import Bar from "./bar";
 
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/world-continents.json";
@@ -57,7 +57,7 @@ const MapChart = () => {
           );
         })}
       </ComposableMap>
-      
+      <Bar value={"this is a bar"} color={"red"} />
     </>
   );
 };
